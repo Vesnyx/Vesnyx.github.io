@@ -2,7 +2,7 @@ name: The Real Guy
 author: Vesnyx
 markdown: redcarpet
 pygments: true
-baseurl: http://Vesnyx.github.io
+baseurl: ""
 description: huehuehue
 github: http://www.github.com/Vesnyx
 twitter: http://www.twitter.com/
