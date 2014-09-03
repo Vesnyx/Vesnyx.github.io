@@ -1,16 +1,16 @@
-title:            Site Title
-description:      Describe your website here.
+title:            The Real Guy
+description:      huehuhuehuehue
 disqus_shortname: 
 reading_time:     true
 words_per_minute: 200
 #Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              http://localhost:4000
+url:""
 
 # Owner/author information
 owner:
-  name:           Your Name
+  name:           Vesnyx
   avatar:         avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
+  bio:            "A simple, hopeful person with a bit of knowledge."
   email:          you@email.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        
