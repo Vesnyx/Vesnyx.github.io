@@ -1,71 +1,61 @@
-title:            The Real Guy
-description:      huehuhuehuehue
-disqus_shortname: 
-reading_time:     true
-words_per_minute: 200
-#Your site's domain goes here. Leave localhost server or blank when working locally.
-url:
+# Site settings
+title: Your awesome title
+tagline: And Tagline
+email: gayanvirajith@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Hi, I’m a professional UI/UX designrer and web developer. 
+  I love being minimal and creative.
+baseurl: "/gaya" # the subpath of your site, e.g. /blog/
+url: "http://gayan.me" # the base hostname & protocol for your site
+logourl: /assets/images/logo.png # Site logo
+author: "Tom Warlker"
+author_thumbnail: "/assets/images/avatar.jpg" # Author avatar
+# Theme customization - please change from the defaults!
+theme:
+  # Color for sidebar bar, links, etc
+  highlight_color: "#205081" #205081" # "#272935"
+  # Social media links, leave blank to ignore
+  social: 
+    github: gayanvirajith
+    twitter: gayanvirajith
+    facebook: gayanvirajith
+    gplus: +gayanvirajith
+    # dribble: gayanvirajith
+    pinterest: gayanvirajith
 
-# Owner/author information
-owner:
-  name:           Vesnyx
-  avatar:         avatar.jpg
-  bio:            "A simple, hopeful person with a bit of knowledge."
-  email:          you@email.com
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:        
-  facebook:       
-  github:         
-  stackexchange:  
-  linkedin:       
-  instagram:      
-  flickr:         
-  tumblr:         
-  # For Google Authorship https://plus.google.com/authorship
-  # google plus id, include the '+', eg +mmistakes
-  google_plus:    +yourid
+  # Enable share buttons on post footer
+  show_share_buttons: true
 
-# Background image to be tiled on all pages
-background: 
+  # Show author picure, name and social links on post footer
+  show_author_info: true
 
-# Analytics and webmaster tools stuff goes here
-google_analytics:   
-google_verify:      
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+  # Disqus comments manager - shortname
+  # disqus_shortname: gaya-webcreate
 
-# Links to include in top navigation
-# For external links add external: true
-links:
-  - title: Google
-    url: http://www.google.com
-    external: true
+  # Google Analytics/Webmaster key, leave blank to ignore
+  google_analytics_key: 
+  google_webmaster_key: 
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
-future:      true
-highlighter: pygments
-markdown:    kramdown
+# Build settings
+markdown: kramdown
 
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title/
+# Permalinks
+permalink:        pretty
 
-# Amount of post to show on home page
+# Pagination config
 paginate: 5
 
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: true
+# Files/Folders to be excluded from generated _site folder
+exclude: 
+  - CNAME
+  - Gemfile
+  - Rakefile
+  - README.md
+  - .gitignore
+  - .sass-cache
+  - Gemfile.lock
 
-  coderay:
-    coderay_line_numbers: nil
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+# Sass conversion configs
+sass:
+  sass_dir: assets/css/_sass
+  style: :compressed

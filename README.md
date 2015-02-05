@@ -1,118 +1,132 @@
-# HPSTR Jekyll Theme
+# Gaya Jekyll Theme
 
-They say three times the charm, so here is another free responsive Jekyll theme for you. I've learned a ton since open sourcing my first two themes [on Github](http://github.com/mmistakes), and wanted to try a few new things this time around. If you've used my previous themes most of this should be familiar territory...
+Modern responsive theme made for jekyll blogging platform. 
+Gaya is a simple theme build from ground up with the focus of performance. 
+The theme itself quickly adapts to the users device, so it looks great on 
+smartphones, tablets, desktops or even the large monitors.
 
-## What HPSTR brings to the table:
-
-* Responsive templates for post, page, and post index `_layouts`. Looks great on mobile, tablet, and desktop devices.
-* Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.  
-* Modern and minimal design.
-* Sweet animated menu.
-* Readable typography to make your words shine.
-* Support for large images to call out your favorite posts.
-* Comments powered by [Disqus](http://disqus.com) if you choose to enable.
-* Social Sharing links for Facebook, Twitter, and Google+ if you choose to enable.
-* Simple and clear permalink structure.
-* [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) support for a better social sharing experience.
-* Simple [custom 404 page](http://mmistakes.github.io/hpstr-jekyll-theme/404.html) to get you started.
-* Stylesheets for Pygments and Coderay [syntax highlighting](http://mmistakes.github.io/hpstr-jekyll-theme/code-highlighting-post/) to make your code examples look snazzy
-* [Grunt](http://gruntjs.com) build script for easy theme development
-* [Available in Spanish](https://github.com/cruznick/hpstr-jekyll-theme/tree/es). Thanks [@cruznick](https://github.com/cruznick)!
-
-![HPSTR Theme Preview screenshot](http://mmistakes.github.io/hpstr-jekyll-theme/images/hpstr-jekyll-theme-preview.jpg)
+- Ability to change theme color at any time with any color.
+- Easy customizable menu navigation.
+- SEO Friendly
+- Embed image, YouTube/Vimeo video or SoundCloud audio to your post.
 
 ---
 
-General notes and suggestions for customizing **HPSTR**.
+![Theme preview](http://gayan.me/thumbnails/gaya-jekyll-theme-preview-590x300.png "Gaya jekyll theme")
 
-## Basic Setup for a new Jekyll site
+### Need Help?
 
-1. [Install Bundler](http://bundler.io) `gem install bundler` and then install [Jekyll](http://jekyllrb.com) and all dependencies `bundle install`.
-2. Fork the [HPSTR Jekyll Theme repo](https://github.com/mmistakes/hpstr-jekyll-theme/fork).
-3. Clone the repo you just forked and rename it.
-4. Edit `_config.yml` to personalize your site.
-5. Check out the sample posts in `_posts` to see examples for pulling in large feature images, assigning categories and tags, and other YAML data.
-6. Read the documentation below for further customization pointers and documentation.
+Please submit as an 
+[issue](https://github.com/web-create/harmony/issues/new), I am happy 
+to response back.
 
-[Demo the Theme](http://mmistakes.github.io/hpstr-jekyll-theme)
+## How to install/run
 
-**Pro-tip:** Delete the `gh-pages` branch after cloning and start fresh by branching off `master`. There is a bunch of garbage in `gh-pages` used for the theme's demo site that I'm guessing you don't want on your site.
+1. [Fork](https://github.com/gayanvirajith/gaya) this repository.
+2. Clone it: git clone https://github.com/YOUR-USERNAME/gaya.
+3. If you completely new to jekyll, please read more about [Jekyll](http://jekyllrb.com/) and [Github pages](https://help.github.com/articles/using-jekyll-with-pages).
+4. Change your directory into cloned repository. 
+5. Run `bundle install`
+6. Edit the _config.yml on root directory. Change `url` property to to 
+`http://127.0.0.1:4000` since you are going to run on localhost.
+7. Run the jekyll server by having: `bundle exec jekyll serve --baseurl ''` or `rake preview`   
 
----
+Try to locate your browser at [http://localhost:4000](http://localhost:4000).
 
-## Setup for an Existing Jekyll site
+Note: If you are a windows user please refer this nice website - http://jekyll-windows.juthilo.com/ by Julian Thilo to configure ruby + jekyll on windows.
 
-1. Clone the following folders: `_includes`, `_layouts`, `assets`, and `images`.
-2. Clone the following files and personalize content as need: `about.md`, `posts.html`, `index.html`, `tags.html`, and `feed.xml`.
-3. Set the following variables in your `config.yml` file:
 
-``` yaml
-title:            Site Title
-description:      Describe your website here.
-disqus_shortname: shortname
-# Your site's domain goes here. When working locally use localhost server leave blank
-# PS. If you set this wrong stylesheets and scripts won't load and most links will break.
-# PPS. If you leave it blank for local testing home links won't work, they'll be fine for live domains though.
-url:              http://localhost:4000
+## Theme options and configurations
 
-# Owner/author information
-owner:
-  name:           Your Name
-  avatar:         avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
-  email:          you@email.com
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:        
-  facebook:       
-  github:         
-  stackexchange:  
-  linkedin:       
-  instagram:      
-  flickr:         
-  tumblr:         
-  # For Google Authorship https://plus.google.com/authorship
-  # google plus id, include the '+', eg +mmistakes
-  google_plus:    +yourid
+Following options can be seen within the file `_config.yml`. More information 
+about configuration can be found on the [Jekyll Documentationn][jekyll]
 
-# Analytics and webmaster tools stuff goes here
-google_analytics:   
-google_verify:      
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+### General settings
 
-# Links to include in top navigation
-# For external links add external: true
-links:
-  - title: Theme Setup
-    url: /theme-setup
-  - title: External Link
-    url: http://mademistakes.com
-    external: true
+| Property name | Description  |
+------------ | -------------
+`title` | The title of your blog shown in the site header along with the logo.
+`tagline` | The site tagline also shown in the site header along with the title.
+`email` | The email address associated with blog/site.
+`description` | The site description used to show author's/site's description in the top of the sidebar.
+`baseurl` | The subpath of your site, e.g. /blog/. More information can be found in the [Jekyll Documentationn][jekyll].
+`url` | The base host name & protocol for your site. More information can be found in the [Jekyll Documentationn][jekyll].
+`logourl` | Path to main logo image.
+`author_thumbnail` | Path to author's thumbnail image. 
+`author` | Name of the author.
+`paginate` | Number of posts to show per page, More information can be found in the [Jekyll Documentationn][jekyll].
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
-future:      true
-pygments:    true
-markdown:    kramdown
+### Social profile links
 
-# Amount of posts to show on home page
-paginate: 5
+| Property name | Description  |
+------------ | -------------
+`github` | GitHub link (Leave empty to exclude)
+`twitter` | Twitter link (Leave empty to exclude)
+`facebook` | Facebook link (Leave empty to exclude)
+`gplus` | Google plus link (Leave empty to exclude)
+`dribble` | Dribble link (Leave empty to exclude)
+`pinterest` | Pinterest link (Leave empty to exclude)
+
+### Theme settings
+
+| Property name | Description  |
+------------ | -------------
+`highlight_color` | The main highlight/theme color of the site. You can put any color as a hex color. The configured color will be applied to sidebar, anchor links, buttons etc.
+`show_share_buttons` | Set as True/False to enable or disable Post share option.
+`show_author_info` | Set as True/False to enable or disable the author information on a post.
+`disqus_shortname` | Disqus Short name for Disqus comments. Leave empty to disable comments.
+`google_analytics_key` | Enter your Google analytics tracking ID to enable analytic support.
+`google_webmaster_key` | Enter your Google web-master verification key to verify your site with the web-master tool. (This is an alternative way of verifying your site with the web-master tool, the general way is to upload a file to your server.)
+
+
+### Page level configurations
+
+These configurations can be found within the top section of the each page, see the a post under `_posts` directory for example. 
+
+| Property name | Description  |
+------------ | -------------
+`banner_image` | Specify the image name eg: `sample-banner-image-1.jpg` for banner image for the post. Jekyll system tries to locate the image under `assets/images`. So make sure you place all banner images under assets/images.
+`banner_video` | If you want to embed `Youtube/Vimeo` Video or `SoundCloud` audio, Specify the resource within single quotes. Please have a look on example post in `_posts/2014-12-14-what-is-nodejs.md` to see how we embed YouTube video. 
+`comments` | Set as True/False, if false will disable comments for current page/post.
+`browser_title` | SEO property.  Use this property if you want to display different browser title other than default page title. Please have a look on example post under `_posts/2014-12-14-what-is-nodejs.md` to see how we used the property.
+`meta_description` | SEO property. Use this property If you want to have unique meta description for each post. See the example post on `_posts/2014-12-14-what-is-nodejs.md` to see how we used the property.
+
+### Sidebar navigation configurations
+
+As jekyll supports data files, **Gaya** theme uses `YAML` [data file][df] to load sidebar navigation items. You could find the `main-nav.yaml` data file under `_data/` directory. You could add any number of menu items by modifying `main-nav.yaml`. 
+
+An example of `main-nav.yaml`:
+
+```
+- title: "About me" # Title/Caption of the menu item
+  href: "/about" # the page where it pointed
+- title: "Blog Archive"
+  href: "/archive"
 ```
 
----
+At some point you want to link an external URL, in that case you could edit the `_includes/sidebar.html` file. See the following example:
 
-## More Theme Setup Goodness
-
-To learn more about how to customize the theme, include feature images in posts, use the Grunt build script, and some other junk, [read up here](http://mmistakes.github.io/hpstr-jekyll-theme/theme-setup/).
-
----
-
-## Questions?
-
-Having a problem getting something to work or want to know why I setup something in a certain way? Ping me on Twitter [@mmistakes](http://twitter.com/mmistakes) or [file a GitHub Issue](https://github.com/mmistakes/hpstr-jekyll-theme/issues/new). And if you make something cool with this theme feel free to let me know.
-
----
+```
+<nav class="sidebar-nav">
+   <a class="sidebar-nav-item" 
+      href="http://www.example.com"
+      target="_blank">
+      Example site
+    </a>
+</nav>
+```
 
 ## License
 
-This theme is free and open source software, distributed under the [The MIT License](https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/LICENSE). So feel free to to modify this theme to suit your needs. 
+(The MIT License)
+
+Copyright (c) 2014 Gayan Virajith
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+[jekyll]: http://jekyllrb.com
+[df]: http://jekyllrb.com/docs/datafiles/
