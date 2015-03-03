@@ -1,2 +1,4 @@
-·¡9hm÷Z(Mj&×¡ÉÅ&ª˜]¦ixhR+3”m!íüˆ£yptGa(ýRnwÃì,mAH¼k
-%rV4¨o)ßoE}	Ãã{F-e!üan}êm%u,ÚB¨]Eæw gùA-àtüv,+z"¤g"YLw•9Vc&+\mìk1-6!aj<vqo
+- title: "About me" # Title/Caption of the menu item
+  href: "/about" # the page where it pointed 
+- title: "Blog Archive"
+  href: "/archive"
